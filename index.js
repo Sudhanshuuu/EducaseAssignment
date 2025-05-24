@@ -15,5 +15,6 @@ app.use(express.json());
 connectMongoDb(process.env.MONGO_URI);
 
 app.use('/', schoolRoute);
-
 app.listen(3001, () => { console.log(`Your server is running at port at ${port}`) });
+
+module.exports = app;
