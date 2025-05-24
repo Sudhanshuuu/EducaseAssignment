@@ -16,7 +16,7 @@ async function handleAddSchool(req, res) {
         });
 
         res.status(201).json({
-            message: 'School added successfully!',
+            message: 'School added successfully',
             schoolId: newSchool._id,
             school: newSchool
         })
